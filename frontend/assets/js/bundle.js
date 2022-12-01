@@ -81,74 +81,22 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/A0019-exercicio/A0019-exercicio.ts");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/A018-webpack/A018-webpack.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/A0019-exercicio/A0019-exercicio.ts":
-/*!************************************************!*\
-  !*** ./src/A0019-exercicio/A0019-exercicio.ts ***!
-  \************************************************/
+/***/ "./src/A018-webpack/A018-webpack.ts":
+/*!******************************************!*\
+  !*** ./src/A018-webpack/A018-webpack.ts ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-Object.defineProperty(exports, "__esModule", { value: true });
-__webpack_require__(/*! ../A0035-exercicio-video/A0035-exercicio-video */ "./src/A0035-exercicio-video/A0035-exercicio-video.ts");
-
-
-/***/ }),
-
-/***/ "./src/A0035-exercicio-video/A0035-exercicio-video.ts":
-/*!************************************************************!*\
-  !*** ./src/A0035-exercicio-video/A0035-exercicio-video.ts ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var VideoPlayer = (function () {
-    function VideoPlayer(videoPlayerElements) {
-        this.videoPlayer = videoPlayerElements.videoPlayer;
-        this.playButton = videoPlayerElements.playButton;
-        this.stopButton = videoPlayerElements.stopButton;
-    }
-    VideoPlayer.prototype.iniciarEventos = function () {
-        var _this = this;
-        this.playButton.addEventListener('click', function () {
-            _this.playToggle();
-        });
-        this.stopButton.addEventListener('click', function () {
-            _this.videoPlayer.pause();
-            _this.videoPlayer.currentTime = 0;
-            _this.playButton.innerText = 'Play';
-        });
-    };
-    VideoPlayer.prototype.playToggle = function () {
-        if (this.videoPlayer.paused) {
-            this.videoPlayer.play();
-            this.playButton.innerText = 'Pause';
-        }
-        else {
-            this.videoPlayer.pause();
-            this.playButton.innerText = 'Play';
-        }
-    };
-    VideoPlayer.prototype.stop = function () {
-    };
-    return VideoPlayer;
-}());
-exports.default = VideoPlayer;
-var videoPlayer = new VideoPlayer({
-    videoPlayer: document.querySelector('.video'),
-    playButton: document.querySelector('.play'),
-    stopButton: document.querySelector('.stop'),
-});
-videoPlayer.iniciarEventos();
+console.log('Olá mundo');
+console.log('Hello World');
 
 
 /***/ })
