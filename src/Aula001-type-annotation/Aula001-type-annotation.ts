@@ -9,7 +9,7 @@ let arraysDeNumeros: Array<number> = [1, 3, 4, 5];
 let arraysDeString: Array<string> = ['a', 'b'];
 
 // Objetos
-let pessoa: {nome: string, idade: number, adulto?: boolean} = {
+export let pessoa: {nome: string, idade: number, adulto?: boolean} = {
   idade: 30,
   nome: 'jp'
 };
